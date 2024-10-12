@@ -68,5 +68,5 @@ jobs:
         with:
           task-definition: ${{ steps.task-def.outputs.task-definition }}
           service: flask_app_service
-          cluster: flask_app_service
+          cluster: flask_app_cluster
           wait-for-service-stability: true
