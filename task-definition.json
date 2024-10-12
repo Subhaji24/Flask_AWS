@@ -1,13 +1,13 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-east-1:058264399157:task-definition/loan_app_task:3",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:384027175868:task-definition/flask_app_task:1",
     "containerDefinitions": [
         {
-            "name": "loan_app_container",
-            "image": "058264399157.dkr.ecr.us-east-1.amazonaws.com/loan_app",
+            "name": "flask_app_container",
+            "image": "384027175868.dkr.ecr.us-east-1.amazonaws.com/flask_app",
             "cpu": 0,
             "portMappings": [
                 {
-                    "name": "loan_app_container-80-tcp",
+                    "name": "flask_app_container-80-tcp",
                     "containerPort": 80,
                     "hostPort": 80,
                     "protocol": "tcp",
@@ -23,7 +23,7 @@
             "logConfiguration": {
                 "logDriver": "awslogs",
                 "options": {
-                    "awslogs-group": "/ecs/loan_app_task",
+                    "awslogs-group": "/ecs/flask_app_task",
                     "mode": "non-blocking",
                     "awslogs-create-group": "true",
                     "max-buffer-size": "25m",
@@ -35,10 +35,10 @@
             "systemControls": []
         }
     ],
-    "family": "loan_app_task",
-    "executionRoleArn": "arn:aws:iam::058264399157:role/ecsTaskExecutionRole",
+    "family": "flask_app_task",
+    "executionRoleArn": "arn:aws:iam::384027175868:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
-    "revision": 3,
+    "revision": 1,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -84,7 +84,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2024-10-12T17:57:59.206Z",
-    "registeredBy": "arn:aws:sts::058264399157:federated-user/shivank.agarwal_1@scaler.com",
+    "registeredAt": "2024-10-12T18:35:30.443Z",
+    "registeredBy": "arn:aws:sts::384027175868:federated-user/13batchsclaeraws50",
     "tags": []
 }
