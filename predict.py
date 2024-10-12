@@ -4,6 +4,7 @@ import sklearn
 
 app = Flask(__name__)
 print(__name__)
+print("Hi...!!!!")
 
 @app.route("/")
 def hello_world():
