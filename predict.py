@@ -8,7 +8,7 @@ print("Hi...!!!!!!")
 
 @app.route("/")
 def hello_world():
-    return "<p>Hello, World V3! See I am now suuuccccessfull!!!!!!!</p>"
+    return "<p>Hello, World V3! See I am now very suuuccccessfull!!!!!!!</p>"
 
 model_pickle = open("./artefacts/classifier.pkl", "rb")
 clf = pickle.load(model_pickle)
