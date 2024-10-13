@@ -1,9 +1,9 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-east-1:384027175868:task-definition/flask_app_task:1",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:058264399157:task-definition/flask_app_task:1",
     "containerDefinitions": [
         {
             "name": "flask_app_container",
-            "image": "384027175868.dkr.ecr.us-east-1.amazonaws.com/flask_app",
+            "image": "058264399157.dkr.ecr.us-east-1.amazonaws.com/flask_app:latest",
             "cpu": 0,
             "portMappings": [
                 {
@@ -36,7 +36,7 @@
         }
     ],
     "family": "flask_app_task",
-    "executionRoleArn": "arn:aws:iam::384027175868:role/ecsTaskExecutionRole",
+    "executionRoleArn": "arn:aws:iam::058264399157:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
     "revision": 1,
     "volumes": [],
@@ -84,7 +84,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2024-10-12T18:35:30.443Z",
-    "registeredBy": "arn:aws:sts::384027175868:federated-user/13batchsclaeraws50",
+    "registeredAt": "2024-10-13T02:06:20.289Z",
+    "registeredBy": "arn:aws:sts::058264399157:federated-user/shivank.agarwal_1@scaler.com",
     "tags": []
 }
